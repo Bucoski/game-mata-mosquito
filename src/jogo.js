@@ -18,7 +18,7 @@ function posicaoRandomica() {
     posicaoX = posicaoX < 0 ? 0 : posicaoX;
     posicaoY = posicaoY < 0 ? 0 : posicaoY;
 
-    console.log(posicaoX, posicaoY)
+    [posicaoX, posicaoY] = validaPosicao(posicaoX, posicaoY);
 
 
     var mosquito = document.createElement('img')
@@ -29,4 +29,12 @@ function posicaoRandomica() {
     mosquito.style.position = 'absolute'
 
     document.body.appendChild(mosquito)
+}
+
+
+function validaPosicao(x, y) {
+    x = x < 0 ? 0 : x;
+    y = y < 0 ? 0 : y;
+
+    return [x, y];
 }
