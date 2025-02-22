@@ -13,7 +13,7 @@ if (nivel === 'normal') {
 } else if (nivel === 'dificil') {
     criaMosquitoTempo = 1000
 } else {
-    criaMosquitoTempo = 800
+    criaMosquitoTempo = 750
 }
 
 function ajustaTamanhoPalcoJogo() { // responsividade 
@@ -65,6 +65,19 @@ function posicaoRandomica() {
     mosquito.style.position = 'absolute';
     mosquito.id = 'mosquito';
     mosquito.draggable="false";
+
+    mosquito.ondragstart = function(event) {
+        event.preventDefault();
+        this.remove();  // Remove o mosquito quando o arraste começar
+    };
+    
+    mosquito.ondragend = function(event) {
+        event.preventDefault(); // Garante que o arraste não seja permitido
+        this.remove(); // Remove o mosquito ao terminar o arraste
+    };
+
+    document.body.appendChild(mosquito);
+
     mosquito.onclick = function() {
         this.remove();
     }
