@@ -1,9 +1,13 @@
+html {
+    cursor: url(imagens/mata_mosca.png) 30 30, auto;
+}
+
 body {
     background-image: url(imagens/background-image-AI.png);
     background-repeat: no-repeat;
-    background-size: cover; /* Isso vai fazer a imagem cobrir toda a tela */
-    background-attachment: fixed; /* Isso vai garantir que a imagem fique fixa ao rolar a página */
-    background-position: center center; /* Isso vai centralizar a imagem no fundo */
+    background-size: cover; /* Isso faz a imagem cobrir toda a tela */
+    background-attachment: fixed; /* Isso garante que a imagem fique fixa ao rolar a página */
+    background-position: center center; /* Isso centraliza a imagem no fundo */
     height: 100vh; /* Garante que o body tenha 100% da altura da tela */
     margin: 0; /* Remove qualquer margem padrão do body */
 }
