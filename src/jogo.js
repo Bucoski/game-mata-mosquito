@@ -13,7 +13,7 @@ if (nivel === 'normal') {
 } else if (nivel === 'dificil') {
     criaMosquitoTempo = 1000
 } else {
-    criaMosquitoTempo = 750
+    criaMosquitoTempo = 800
 }
 
 function ajustaTamanhoPalcoJogo() { // responsividade 
@@ -64,6 +64,7 @@ function posicaoRandomica() {
     mosquito.style.top = posicaoY + 'px';
     mosquito.style.position = 'absolute';
     mosquito.id = 'mosquito';
+    mosquito.draggable="false";
     mosquito.onclick = function() {
         this.remove();
     }
