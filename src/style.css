@@ -17,3 +17,11 @@
     height: 110px;
     width: 110px;
 }
+
+.ladoA {
+    transform:scaleX(1) /* Mantem a posição */
+}
+
+.ladoB{
+    transform:scaleX(-1)/* Flipa a posição */
+}
