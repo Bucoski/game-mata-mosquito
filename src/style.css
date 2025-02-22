@@ -1,11 +1,46 @@
+body {
+    background-image: url(imagens/background-image-AI.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* Isso vai fazer a imagem cobrir toda a tela */
+    background-attachment: fixed; /* Isso vai garantir que a imagem fique fixa ao rolar a página */
+    background-position: center center; /* Isso vai centralizar a imagem no fundo */
+    height: 100vh; /* Garante que o body tenha 100% da altura da tela */
+    margin: 0; /* Remove qualquer margem padrão do body */
+}
+
+
+.painel {
+    position: absolute;
+    width: 190px;
+    padding: 10px;
+    left: opx;
+    bottom: 0px;
+    border-top: solid 1px #fff;
+    background-color: #fff;
+    opacity: 0.7;
+}
+
+.vidas {
+    float: left;
+}
+
+.cronometro {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+/* ----- daqui pra baixo é ajuste sobre o mosquito ----- */
 .mosquito1 {
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
 }
 
 .mosquito2 {
-    height: 60px;
-    width: 60px;
+    height: 65px;
+    width: 65px;
 }
 
 .mosquito3 {
